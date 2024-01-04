@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:since/costants/app_colors.dart';
-import 'package:since/moduels/since/v_since_list_page.dart';
+import 'package:since/moduels/since_home/v_since_home_page.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextStyle defaultTextStyle = GoogleFonts.poppins(color: AppColors.white, fontSize: 16, fontWeight: FontWeight.w600);
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Since',
       theme: ThemeData(
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
           titleSmall: defaultTextStyle,
         ),
       ),
-      home: const SinceListPage()
+      home: const SinceHomePage()
     );
   }
 }

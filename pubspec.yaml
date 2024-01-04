@@ -39,6 +39,10 @@ dependencies:
   get:
   google_fonts:
   flutter_native_splash: ^2.3.7
+  tabler_icons:
+  shimmer: ^3.0.0
+  intl:
+  flutter_super_scaffold:
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +68,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/badges/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
